@@ -1,6 +1,7 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 30;
+var x = 100;
 
 
 function setup_wallpaper(pWallpaper) {
@@ -50,7 +51,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   strokeWeight(1);
   stroke(210, 1, 3);//red
   fill(62, 176, 17);//green
-  rect(66, 66, 33);
+  rect(x, 66, 33);
 
 
   //red circle
@@ -129,6 +130,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex(160, 95);
   vertex(165, 95);
   endShape(CLOSE);
+
 
 
 
