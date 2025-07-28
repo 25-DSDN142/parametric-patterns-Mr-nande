@@ -59,10 +59,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   stroke(232, 232, 232);//white?
   fill(228, 8, 10);//red
   //circles in a circle
-  ellipse(132, 33, 33, 33);
-  ellipse(132, 33, 24, 24);
-  ellipse(132, 33, 16.5, 16.5);
-  ellipse(132, 33, 8, 8);
+  ellipse(x, 33, 33, 33);
+  ellipse(x, 33, 24, 24);
+  ellipse(x, 33, 16.5, 16.5);
+  ellipse(x, 33, 8, 8);
 
   //white lines
   strokeWeight(2);
