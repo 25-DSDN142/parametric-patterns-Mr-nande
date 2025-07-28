@@ -110,19 +110,26 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex(16.5, 15);
   endShape(CLOSE);
 
+  //red cross :D
   strokeWeight(1);
-  stroke(0, 0, 0);//black
-  fill(255, 255, 255);//white
+  stroke(206, 206, 206);//grey
+  fill(210, 1, 3);//red
   beginShape();
-  vertex(132, 132);
-  vertex(165, 132);
-  vertex(150, 165);
-  vertex(132, 150);
-  vertex(180, 150);
-  vertex(132, 130);
-  vertex(150, 150);
-  vertex(132, 165);
+  vertex(165, 90);
+  vertex(165, 90);
+  vertex(170, 90);
+  vertex(170, 95);
+  vertex(175, 95);
+  vertex(175, 100);
+  vertex(170, 100);
+  vertex(170, 105);
+  vertex(165, 105);
+  vertex(165, 100);
+  vertex(160, 100);
+  vertex(160, 95);
+  vertex(165, 95);
   endShape(CLOSE);
+
 
 
 
