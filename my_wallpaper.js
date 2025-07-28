@@ -40,7 +40,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   line(99, 0, 99, 200);
   line(165, 0, 165, 200);
 
-  //draft
+  //draft/star
   strokeWeight(1);
   stroke(255, 22, 89);//yellow
   fill(254, 153, 0);//orange
@@ -51,6 +51,37 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex(33, 42);
   vertex(66, 42);
   vertex(33, 66);
+  endShape(CLOSE);
+
+  //random ting
+  strokeWeight(1);
+  stroke(228, 9, 10);//red
+  fill(121, 18, 150);//purple
+  beginShape();
+  vertex(99, 99);
+  vertex(132, 132);
+  vertex(165, 99);
+  vertex(165, 132);
+  vertex(132, 99);
+  vertex(99, 132);
+  endShape(CLOSE);
+
+  //pasi pattern
+  strokeWeight(1);
+  stroke(255, 255, 255);//white
+  fill(0, 0, 0);//black
+  beginShape();
+  vertex(99, 66);
+  vertex(99, 50);
+  vertex(132, 50);
+  vertex(132, 33);
+  vertex(115.5, 50);
+  vertex(115.5, 33);
+  vertex(99, 33);
+  vertex(132, 66);
+  vertex(115.5, 66);
+  vertex(115.5, 50);
+  vertex(99, 66);
   endShape(CLOSE);
 
 }
