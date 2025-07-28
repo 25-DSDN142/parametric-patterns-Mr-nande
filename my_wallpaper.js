@@ -131,6 +131,18 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex(165, 95);
   endShape(CLOSE);
 
+  //star.ish
+strokeWeight(1);
+stroke(228, 118, 76);//peach
+fill(255, 222, 89);//yellow
+beginShape();
+vertex(140, 155);
+vertex(150,132);
+vertex(160, 155);
+vertex(140, 140);
+vertex(160, 140);
+vertex(140, 155);
+endShape(CLOSE);
 
 
 
