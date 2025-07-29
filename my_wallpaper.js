@@ -24,7 +24,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   noFill();
  
   //testing curvy lines
-curve(10, 20, 50, 150, 150, 150, 190, 20);
+curve(50, 0, 50, 150, 150, 150, 190, 20);
+curve(10, 150, 50, 150, 150, 150, 190, 150);
+curve(60, 33,  30, 60,  50, 60,  33, 33);
 
+ // Left side
+  curve(33, 33,  30, 60,  40, 60,  33, 33);
 
+  // Right side
+  curve(33, 33,  40, 60,  30, 60,  33, 33);
 }
