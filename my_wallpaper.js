@@ -2,7 +2,7 @@
 let rect_width  = 20;
 let rect_height = 30;
 
-
+let zero = 0;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -22,7 +22,14 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-let angle = 360 / 5;
+
+  flower(0,0); 
+
+}
+
+function flower(x,y){
+
+  let angle = 360 / 5;
   strokeWeight(1);
   stroke(0, 0, 0);
   fill(204, 108, 231);
@@ -30,15 +37,13 @@ let angle = 360 / 5;
   push()
   translate(99, 99)
   for (let i = 0; i < 5; i += 1) {
-    ellipse(0, 0, 15, 50);  
+    ellipse(x, y, 15, 50);  
     rotate(angle);
   }
-
+  fill(255, 222, 89);//yellow
+  ellipse(zero,zero, 20, 20);
+  ellipse(0,0, 10, 10);
   pop()
 
-  fill(255, 222, 89);//yellow
-  ellipse(99, 99, 20, 20);
-  ellipse(99, 99, 10, 10);
 
-   
 }
