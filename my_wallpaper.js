@@ -23,14 +23,18 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   stroke(228, 76, 211);//light purple
   noFill();
  
-  //testing curvy lines
-curve(50, 0, 50, 150, 150, 150, 190, 20);
-curve(10, 150, 50, 150, 150, 150, 190, 150);
-curve(60, 33,  30, 60,  50, 60,  33, 33);
+  ellipse(100, 100, 30, 30);
+  ellipse(100, 100, 60, 60);
 
- // Left side
-  curve(33, 33,  30, 60,  40, 60,  33, 33);
+  //lines
+  line(100, 0, 100, 200);
+  line(0, 100, 200, 100);
+  line(0, 200, 200, 0);
+  line(0, 0, 200, 200);
 
-  // Right side
-  curve(33, 33,  40, 60,  30, 60,  33, 33);
+  stroke(0, 0, 0);
+  curve(150, 50, 100, 50, 100, 150, 150, 150);
+  curve(50, 50, 100, 50, 100, 150, 50, 150);//wow a surfboard
+
+  line()
 }
