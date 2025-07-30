@@ -36,8 +36,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(10, 60,10, 10);
   ellipse(60, 60, 10, 10);
 
-  line(10, 99, 15, 119);
-  line(15, 119, 20, 99);
+  line(5, 99, 12, 119);
+  line(12, 119, 19, 99);
   line(20, 99, 20, 119);
   line(25, 99, 25, 119);
   line(15, 99, 30, 99);
