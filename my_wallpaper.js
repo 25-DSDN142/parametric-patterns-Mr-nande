@@ -25,8 +25,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   stroke("black");
   noFill();
   rect(25, 40, 18);
-  ellipse(33, 33, 30, 30);
-  ellipse(28, 33, 5, 5);
+  ellipse(29, 33, 5, 5);
   ellipse(38, 33, 5, 5);
   ellipse(33, 40, 3, 3);
   line(10, 60, 60, 20);
@@ -35,13 +34,50 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(60, 20, 10, 10);
   ellipse(10, 60,10, 10);
   ellipse(60, 60, 10, 10);
-
+  ellipse(34, 33, 25, 25);
   line(5, 99, 12, 119);
   line(12, 119, 19, 99);
   line(20, 99, 20, 119);
   line(25, 99, 25, 119);
   line(15, 99, 30, 99);
   line(15, 119, 30, 119);
+
+  //jolly rodger vii
+
+  strokeWeight(1);
+  stroke("black");
+  noFill();
+
+  //crossbones
+  //bone.one
+  line(80, 116, 120, 88);
+  line(80, 114, 117, 88);
+  //topknuckle
+  ellipse(120, 88, 4, 4);
+  ellipse(118, 86, 4, 4);
+  //bottomknuckle
+  ellipse(80, 114, 4, 4);
+  ellipse(82, 116, 4, 4);
+
+  //bone.two
+  line(81, 86, 118, 113);
+  line(80, 88, 118, 116);
+  //topknuckle
+  ellipse(82, 86, 4, 4);
+  ellipse(80, 88, 4, 4);
+  //bottomknuckle
+  ellipse(116, 115, 4, 4);
+  ellipse(118,113, 4, 4);
+  //skull
+  ellipse(100, 100, 20, 20)
+  //mouth
+  rect(92, 105, 16, 11);
+  //eyes
+  ellipse(95, 100, 5, 5);
+  ellipse(105, 100, 5, 5);
+  //nose
+  ellipse(100, 105, 5, 5);
+
 
 
 
