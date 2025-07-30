@@ -151,8 +151,42 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //nose
   ellipse(150, 36, 7, 3);
  
-
-
+  //V
+  strokeWeight(1);
+  stroke("black");
+  fill("black");
+  beginShape();
+  vertex(160, 160);
+  vertex(162, 158);
+  vertex(167, 170);
+  vertex(177, 158);
+  vertex(179, 160);
+  vertex(167, 170);
+  vertex(160, 160);
+  endShape(CLOSE);
+  //ii
+  strokeWeight(1);
+  stroke("black");
+  fill("black");
+  beginShape();
+  vertex(182, 160);
+  vertex(198, 160);
+  vertex(198, 162);
+  vertex(198, 164);
+  vertex(195, 164);
+  vertex(195, 170);
+  vertex(198, 170);
+  vertex(198, 172);
+  vertex(182, 172);
+  vertex(180, 170);
+  vertex(195, 170);
+  vertex(192, 162);
+  vertex(188, 162);
+  vertex(188, 170);
+  vertex(187, 170);
+  vertex(185, 162);
+  vertex(183, 163);
+  endShape(CLOSE);
 
 
 
