@@ -24,11 +24,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   strokeWeight(1);
   stroke("black");
   noFill();
-  rect(33, 33, 25);
+  rect(25, 40, 18);
   ellipse(33, 33, 30, 30);
-  ellipse(25, 33, 10, 5);
-  ellipse(33, 33, 10, 5);
-  ellipse(29, 35, 2, 2);
+  ellipse(28, 33, 5, 5);
+  ellipse(38, 33, 5, 5);
+  ellipse(33, 40, 3, 3);
   line(10, 60, 60, 20);
   line(10, 20, 60, 60);
   ellipse(10, 20, 10, 10);
