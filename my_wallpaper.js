@@ -84,6 +84,27 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(100, 107, 4, 4);
   pop();
 
+  //thethird
+  strokeWeight(1);
+  stroke("black");
+  noFill();
+  
+  //skullbase
+  ellipse(150, 30, 30, 25);
+  //mouthpiece
+  beginShape();
+  vertex(140, 33);
+  vertex(160, 33);
+  vertex(162.5, 53);
+  vertex(158, 53);
+  vertex(157, 50);
+  vertex(156, 53);
+  vertex(137.5, 53);
+  vertex(140, 33);
+
+  endShape();
+
+
 
 
 }
