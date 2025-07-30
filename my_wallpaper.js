@@ -14,7 +14,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240);
+  background("white");
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -188,7 +188,42 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex(183, 163);
   endShape(CLOSE);
 
+//7.D.VNDORS
+strokeWeight(2.5);
+stroke("black");
+fill("black");
+//dividers
+line(70, 120, 75, 150);
+//top notch
+line(65, 125, 77, 123);
+//left notch
+line(50, 170, 75, 150);
+line(50, 162, 58, 172);
+//right notch
+line(75, 150, 105, 160);
+line(103, 153, 98, 164);
 
+//hufferstars
+ellipse(56, 133, 1, 1);
+ellipse(53, 142, 1, 1);
+ellipse(63, 139, 1, 1);
+ellipse(61, 151, 1, 1);
 
+//vc logo
+line(68, 162, 80, 180);
+line(80, 180, 85, 159);
+strokeWeight(2.5);
+noFill();
+ellipse(86, 169, 15, 15);
+stroke("white")
+fill("white")
+ellipse(92, 169, 8, 10);
 
+//7
+strokeWeight(2.5);
+stroke("black")
+line(83, 130, 93, 128);
+line(93, 128, 88, 148);
+line(85, 135, 99, 135);
+line(85, 139, 99, 139);
 }
