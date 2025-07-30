@@ -46,7 +46,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   strokeWeight(1);
   stroke("black");
-  noFill();
+  fill("black");
 
   //crossbones
   //bone.one
@@ -72,9 +72,16 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(100, 100, 20, 20)
   //mouth
   rect(92, 105, 16, 11);
+
+  push();//new move i learnt off phoebe
   //eyes
+  strokeWeight(1);
+  stroke("white");
+  fill("black")
   ellipse(95, 100, 5, 5);
   ellipse(105, 100, 5, 5);
+  pop();
+  
   //nose
   ellipse(100, 105, 5, 5);
 
