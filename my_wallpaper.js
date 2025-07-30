@@ -19,24 +19,30 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-//cloud.lol
-//hmm..
-stroke("blue");
-fill("blue");
-ellipse(33, 66, 20, 20);
-ellipse(23, 70, 5, 5);
-ellipse(48, 56, 30, 30);
-ellipse(66, 50, 30, 30);
-ellipse(80, 56, 20, 20);
-ellipse(90, 66, 20, 20);
-ellipse(100, 76, 20, 10);
-ellipse(28, 76, 30, 10);
-ellipse(66, 74, 85, 25);
-ellipse(66, 63, 30, 10);
 
-//middle symbol ting
-strokeWeight(2);
-stroke("white")
-fill("blue")
-ellipse(66, 66, 30, 30);
+  //jolly roger draft
+  strokeWeight(1);
+  stroke("black");
+  noFill();
+  rect(33, 33, 25);
+  ellipse(33, 33, 30, 30);
+  ellipse(25, 33, 10, 5);
+  ellipse(33, 33, 10, 5);
+  ellipse(29, 35, 2, 2);
+  line(10, 60, 60, 20);
+  line(10, 20, 60, 60);
+  ellipse(10, 20, 10, 10);
+  ellipse(60, 20, 10, 10);
+  ellipse(10, 60,10, 10);
+  ellipse(60, 60, 10, 10);
+
+  line(10, 99, 15, 119);
+  line(15, 119, 20, 99);
+  line(20, 99, 20, 119);
+  line(25, 99, 25, 119);
+  line(15, 99, 30, 99);
+  line(15, 119, 30, 119);
+
+
+
 }
