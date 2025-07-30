@@ -84,14 +84,50 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(100, 107, 4, 4);
   pop();
 
-  //thethird
+  //thethirdattempt
+
+  //crosebones
+  //FIRSTBONE
+  push();
+  fill("black");
+  beginShape();
+  vertex(130, 13);
+  vertex(175, 53);
+  vertex(173, 55);
+  vertex(128, 15);
+  endShape(CLOSE);
+  //bottomknuckles
+  ellipse(176, 53, 5, 5);
+  ellipse(173, 55, 5, 5);
+  //topknuckles
+  ellipse(130, 12, 5, 5);
+  ellipse(127, 15, 5, 5);
+  //SECONDBONE
+  beginShape();
+  vertex(170, 13);
+  vertex(125, 52);
+  vertex(128, 53);
+  vertex(172, 15);
+  //bottomknuckles
+  ellipse(128, 53, 5, 5);
+  ellipse(125, 51, 5, 5);
+  //topknuckles
+  ellipse(170, 12, 5, 5);
+  ellipse(173, 15, 5, 5);
+  endShape(CLOSE);
+  pop();
+
   strokeWeight(1);
   stroke("black");
-  noFill();
-  
-  //skullbase
-  ellipse(150, 30, 30, 25);
-  //mouthpiece
+  fill("grey");
+
+  //skull outline
+  push();
+  stroke("black");
+  ellipse(150, 30, 32, 27)
+  pop();
+
+   //mouthpiece
   beginShape();
   vertex(140, 33);
   vertex(160, 33);
@@ -101,8 +137,22 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   vertex(156, 53);
   vertex(137.5, 53);
   vertex(140, 33);
-
   endShape();
+
+  //skullbase
+  push();
+  stroke("grey");
+  ellipse(150, 30, 30, 25);
+  pop();
+
+  //eyes
+  ellipse(143, 30, 8, 10);
+  ellipse(157, 30, 8, 10);
+  //nose
+  ellipse(150, 36, 7, 3);
+ 
+
+
 
 
 
