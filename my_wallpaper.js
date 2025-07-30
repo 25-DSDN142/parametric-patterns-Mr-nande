@@ -19,22 +19,23 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-  strokeWeight(1);
-  stroke(228, 76, 211);//light purple
-  noFill();
- 
-  ellipse(100, 100, 30, 30);
-  ellipse(100, 100, 60, 60);
+ellipse(99, 99, 50, 50);
+ellipse(99, 99, 40, 40);
+ellipse(99, 99, 30, 30);
+ellipse(99, 99, 20, 20);
+ellipse(99, 99, 10, 10);
 
-  //lines
-  line(100, 0, 100, 200);
-  line(0, 100, 200, 100);
-  line(0, 200, 200, 0);
-  line(0, 0, 200, 200);
+strokeWeight(2);
+stroke(228, 8, 10);//red
+noFill();
+beginShape();
+vertex(33, 66);
+vertex(33, 99);
+vertex(66, 99);
+vertex(66, 66);
+vertex(48, 33);
+vertex(33, 66);
+endShape(CLOSE);
 
-  stroke(0, 0, 0);
-  curve(150, 50, 100, 50, 100, 150, 150, 150);
-  curve(50, 50, 100, 50, 100, 150, 50, 150);//wow a surfboard
 
-  line()
 }
