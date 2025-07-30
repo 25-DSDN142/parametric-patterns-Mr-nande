@@ -71,20 +71,18 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //skull
   ellipse(100, 100, 20, 20)
   //mouth
-  rect(92, 105, 16, 11);
+  ellipse(100, 110, 12, 15);
 
   push();//new move i learnt off phoebe
   //eyes
   strokeWeight(1);
   stroke("white");
   fill("black")
-  ellipse(95, 100, 5, 5);
-  ellipse(105, 100, 5, 5);
-  pop();
-  
+  ellipse(96, 100, 6, 8);
+  ellipse(104, 100, 6, 8);
   //nose
-  ellipse(100, 105, 5, 5);
-
+  ellipse(100, 107, 4, 4);
+  pop();
 
 
 
