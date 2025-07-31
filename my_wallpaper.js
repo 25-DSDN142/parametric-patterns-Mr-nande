@@ -67,7 +67,7 @@ rect(89, 99, 22, 15);
 strokeWeight(0.5);
 stroke("white");
 fill("black");
-ellipse(100, 88, 32, 32);
+ellipse(100, 88, 29, 33);
 
 //V eye
 strokeWeight(2);
@@ -75,7 +75,7 @@ stroke("white");//outline
 line(89, 81, 93, 96);
 line(93, 96, 97, 81);
 strokeWeight(1);
-stroke("black");
+stroke("black");//inner line
 line(89, 81, 93, 96);
 line(93, 96, 97, 81);
 //ii eye
@@ -86,7 +86,7 @@ line(109, 80, 109, 95);
 line(103, 80, 111, 80);
 line(103, 95, 111, 95);
 strokeWeight(1);
-stroke("black");
+stroke("black");//inner line
 line(105, 80, 105, 95);
 line(109, 80, 109, 95);
 line(103, 80, 111, 80);
@@ -96,12 +96,17 @@ line(103, 95, 111, 95);
 strokeWeight(0.5);
 stroke("black");
 fill("white");
-rect(89, 99, 5.5, 15);//starts from far left
-rect(94.5, 99, 5.5, 15);
+rect(89, 99, 5.5, 14.5);//starts from far left
 fill("gold");
-rect(100, 99, 5.5, 15);
+rect(94.5, 99, 5.5, 15);
+fill("white");
+rect(100, 99, 5.5, 14.3);
 fill("white")
-rect(105.5, 99, 5.5, 15);
+rect(105.5, 99, 5.5, 14.5);
+
+stroke("black")
+fill("black")
+rect(89, 99, 22, 2);
 
 
 
