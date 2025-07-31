@@ -14,7 +14,6 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background("white");
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -133,9 +132,9 @@ stroke("black");
 fill("white");
 rect(89, 98, 5.5, 14.5);//starts from far left
 fill("gold");
-rect(94.5, 98, 5.5, 15);
+rect(94.5, 98, 5.5, 14.5);
 fill("white");
-rect(100, 98, 5.5, 14.3);
+rect(100, 98, 5.5, 14.5);
 fill("white")
 rect(105.5, 98, 5.5, 14.5);
 
@@ -157,6 +156,7 @@ endShape(CLOSE);
 
 line(30, 86, 45, 86);
 
+line(89, 107, 111, 106);
 
 
 
