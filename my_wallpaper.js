@@ -32,12 +32,21 @@ noFill();
 line(100, 0, 100, 200);//middle line
 line(100, 80, 150, 80);//topboneline
 line(90, 10, 110, 10);//crossline
-line(100, 50, 140, 50)//circleline/top
-line(100, 52, 130, 52)//circleline/bottom
+//lines in circles
+line(115, 50, 145, 50)//top
+line(115, 52, 140, 52)//bottom
+//circles above skull
+ellipse(100, 50, 30, 30);//middle circle
+ellipse(100, 50, 25, 25);
+ellipse(120, 45, 20, 20);//right circle
+//viitraderslogo
+line(150, 80, 152, 95);//middleline
+line(149, 84, 152, 83);//crossline
+line(142, 100, 152, 95);//leftline
+line(143, 97, 145, 101);//crossline
+line(152, 95, 162, 98);//rightline
 
 
-ellipse(100, 50, 30, 30);//
-ellipse(120, 45, 20, 20);
 
 
 //testing curvy lines//figure this out bruv
@@ -51,18 +60,16 @@ bezier(
   150, 170,   // control point 2 (curve down)
   200, 130    // end point (right)
 )
+//lines on curve
 line(48, 100, 48, 130);
 line(45, 100, 45, 130);
 line(43, 110, 43, 120);
-
-line()
-
-ellipse()
-
+//my first curve :D
 bezier(
-  0, 110,
-  50, 90,
-  150, 
+  0, 110,//starts here
+  50, 70,//bend starts at the 50 and bends up towards the 70?
+  150, 160,//will go through the 150 and bend at the 160,  
+  200, 130 //finish here at the 130
 )
 
 //crossbones
