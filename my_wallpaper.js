@@ -19,9 +19,44 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-background("white");
+background("red");
 
 //crossbones
+
+//outline
+//rightbone
+strokeWeight(3);
+stroke("gold");
+fill("black");
+beginShape();
+vertex(125, 75);//top
+vertex(81, 119);
+vertex(78, 116);//bottom
+vertex(122, 72);
+endShape(CLOSE);
+//topknuckle
+ellipse(121, 72, 6, 6);//leftknuckle
+ellipse(125, 75, 6, 6);//rightknuckle
+//bottomknuckle
+ellipse(79, 115, 6, 6);//leftknuckle
+ellipse(83, 118, 6, 6);//rightknuckle
+
+//leftbone
+strokeWeight(3);
+stroke("gold");
+beginShape();
+fill("black");
+vertex(75, 75);//top
+vertex(119, 119);
+vertex(122, 116);//bottom
+vertex(78, 72);
+endShape(CLOSE);
+//topknuckles
+ellipse(79, 71, 6, 6);//rightknuckle
+ellipse(74, 75, 6, 6);//leftknuckle
+//bottomknuckles
+ellipse(122, 115, 6, 6);//rightknuckle
+ellipse(118, 119, 6, 6);//leftknuckle
 
 //leftbone
 strokeWeight(1);
