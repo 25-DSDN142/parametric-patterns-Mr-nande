@@ -30,10 +30,14 @@ strokeWeight(1);
 stroke("white");
 noFill();
 line(100, 0, 100, 200);//middle line
-line(100, 80, 150, 80);//secondline
+line(100, 80, 150, 80);//topboneline
+line(90, 10, 110, 10);//crossline
+line(100, 50, 140, 50)//circleline/top
+line(100, 52, 130, 52)//circleline/bottom
 
 
 ellipse(100, 50, 30, 30);//
+ellipse(120, 45, 20, 20);
 
 
 //testing curvy lines//figure this out bruv
