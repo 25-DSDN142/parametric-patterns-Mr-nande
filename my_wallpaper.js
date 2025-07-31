@@ -145,6 +145,18 @@ fill("black")
 rect(89, 98, 22, 2);
 
 
+//sword
+strokeWeight(1);
+stroke("black");
+beginShape();
+vertex(30, 66);
+vertex(35, 75);
+vertex(40, 90);
+vertex(42, 90);
+endShape(CLOSE);
+
+line(30, 86, 45, 86);
+
 
 
 
