@@ -19,13 +19,7 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-//grid points/ help see wheres where
-strokeWeight(0.5);
-stroke("grey");
-line(0,0, 200, 200);
-line(0,200, 200, 0);
-line(100, 0, 100, 200);
-line(0, 100, 200, 100);
+background("white");
 
 //crossbones
 
@@ -63,6 +57,12 @@ ellipse(125, 75, 6, 6);//rightknuckle
 ellipse(79, 115, 6, 6);//leftknuckle
 ellipse(83, 118, 6, 6);//rightknuckle
 
+//teethoutline
+strokeWeight(1.5);
+stroke("white");
+fill("white");
+rect(89, 99, 22, 15);
+
 //skull
 strokeWeight(0.5);
 stroke("white");
@@ -92,7 +92,7 @@ line(109, 80, 109, 95);
 line(103, 80, 111, 80);
 line(103, 95, 111, 95);
 
-//teeth outlines/delete later
+//teeth
 strokeWeight(0.5);
 stroke("black");
 fill("white");
