@@ -27,31 +27,13 @@ line(0,200, 200, 0);
 line(100, 0, 100, 200);
 line(0, 100, 200, 100);
 
-strokeWeight(0.5);
-stroke("black");
-noFill();
-//skull
-ellipse(100, 88, 30, 30);
-//jaw
-rect(89, 99, 22, 18);//base/delete later
-//eye outlines/delete later
-strokeWeight(0.5);
-stroke("grey");
-noFill();
-rect(89, 80, 8, 15);//left eye
-rect(103, 80, 8, 15);//right eye
-//teeth outlines/delete later
-rect(89, 99, 5.5, 18);//starts from far left
-rect(94.5, 99, 5.5, 18);
-rect(100, 99, 5.5, 18);
-rect(105.5, 99, 5.5, 18);
-
 //crossbones
+
+//leftbone
 strokeWeight(1);
 stroke("black");
 beginShape();
 fill("black");
-//leftbone
 vertex(75, 75);//top
 vertex(119, 119);
 vertex(122, 116);//bottom
@@ -80,5 +62,71 @@ ellipse(125, 75, 6, 6);//rightknuckle
 //bottomknuckle
 ellipse(79, 115, 6, 6);//leftknuckle
 ellipse(83, 118, 6, 6);//rightknuckle
+
+//skull
+strokeWeight(0.5);
+stroke("white");
+fill("black");
+ellipse(100, 88, 32, 32);
+
+//eye outlines/delete later
+strokeWeight(0.5);
+stroke("grey");
+noFill();
+rect(89, 80, 8, 15);//left eye
+rect(103, 80, 8, 15);//right eye
+
+//teeth outlines/delete later
+stroke("black")
+fill("white");
+rect(89, 99, 5.5, 15);//starts from far left
+rect(94.5, 99, 5.5, 15);
+fill("gold");
+rect(100, 99, 5.5, 15);
+fill("white")
+rect(105.5, 99, 5.5, 15);
+
+
+//skull
+strokeWeight(0.5);
+stroke("white");
+fill("black");
+ellipse(100, 88, 32, 32);
+stroke("black");
+rect(89, 99, 22, 2);
+
+//eye outlines/delete later
+strokeWeight(0.5);
+stroke("grey");
+noFill();
+rect(89, 80, 8, 15);//left eye
+rect(103, 80, 8, 15);//right eye
+
+//V eye
+strokeWeight(3);
+stroke("red");
+line(89, 81, 93, 96);
+line(93, 96, 97, 81);
+strokeWeight(1.5);
+stroke("gold");
+line(89, 81, 93, 96);
+line(93, 96, 97, 81);
+//ii eye
+strokeWeight(3);
+stroke("red");
+line(105, 80, 105, 95);
+line(109, 80, 109, 95);
+line(103, 80, 111, 80);
+line(103, 95, 111, 95);
+strokeWeight(1.5);
+stroke("gold");
+line(105, 80, 105, 95);
+line(109, 80, 109, 95);
+line(103, 80, 111, 80);
+line(103, 95, 111, 95);
+
+
+
+
 
 }
