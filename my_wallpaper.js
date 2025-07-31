@@ -39,15 +39,6 @@ line(115, 52, 140, 52)//bottom
 ellipse(100, 50, 30, 30);//middle circle
 ellipse(100, 50, 25, 25);
 ellipse(120, 45, 20, 20);//right circle
-//viitraderslogo
-line(150, 80, 152, 95);//middleline
-line(149, 84, 152, 83);//crossline
-line(142, 100, 152, 95);//leftline
-line(143, 97, 145, 101);//crossline
-line(152, 95, 162, 98);//rightline
-
-
-
 
 //testing curvy lines//figure this out bruv
 strokeWeight(1);
