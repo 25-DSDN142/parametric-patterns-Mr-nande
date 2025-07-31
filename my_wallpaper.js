@@ -20,9 +20,50 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 background("red");
 
-//crossbones
+//background
+strokeWeight(1);
+stroke("grey")
+line(0, 0, 200, 200);
+line(0, 200, 200, 0);
 
+strokeWeight(1);
+stroke("white");
+noFill();
+line(100, 0, 100, 200);//middle line
+line(100, 80, 150, 80);//secondline
+
+
+ellipse(100, 50, 30, 30);//
+
+
+//testing curvy lines//figure this out bruv
+strokeWeight(1);
+stroke("white");
+noFill();
+// Bezier curve for double bend
+bezier(
+  0, 130,     // start point (left)
+  50, 80,    // control point 1 (curve up)
+  150, 170,   // control point 2 (curve down)
+  200, 130    // end point (right)
+)
+line(48, 100, 48, 130);
+line(45, 100, 45, 130);
+line(43, 110, 43, 120);
+
+line()
+
+ellipse()
+
+bezier(
+  0, 110,
+  50, 90,
+  150, 
+)
+
+//crossbones
 //outline
+
 //rightbone
 strokeWeight(2.5);
 stroke("gold");
@@ -39,7 +80,6 @@ ellipse(125, 75, 6, 6);//rightknuckle
 //bottomknuckle
 ellipse(79, 115, 6, 6);//leftknuckle
 ellipse(83, 118, 6, 6);//rightknuckle
-
 //leftbone
 strokeWeight(2.5);
 stroke("gold");
@@ -57,6 +97,7 @@ ellipse(74, 75, 6, 6);//leftknuckle
 ellipse(122, 115, 6, 6);//rightknuckle
 ellipse(118, 119, 6, 6);//leftknuckle
 
+//innerbone
 //leftbone
 strokeWeight(1);
 stroke("black");
@@ -73,7 +114,6 @@ ellipse(74, 75, 6, 6);//leftknuckle
 //bottomknuckles
 ellipse(122, 115, 6, 6);//rightknuckle
 ellipse(118, 119, 6, 6);//leftknuckle
-
 //rightbone
 strokeWeight(1);
 stroke("black");
@@ -142,22 +182,4 @@ rect(105.5, 98, 5.5, 14.5);
 stroke("black")
 fill("black")
 rect(89, 98, 22, 2);
-
-
-//sword
-strokeWeight(1);
-stroke("black");
-beginShape();
-vertex(30, 66);
-vertex(35, 75);
-vertex(40, 90);
-vertex(42, 90);
-endShape(CLOSE);
-
-line(30, 86, 45, 86);
-
-line(89, 107, 111, 106);
-
-
-
 }
