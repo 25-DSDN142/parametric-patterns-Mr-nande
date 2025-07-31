@@ -25,7 +25,7 @@ background("red");
 
 //outline
 //rightbone
-strokeWeight(3);
+strokeWeight(2.5);
 stroke("gold");
 fill("black");
 beginShape();
@@ -42,7 +42,7 @@ ellipse(79, 115, 6, 6);//leftknuckle
 ellipse(83, 118, 6, 6);//rightknuckle
 
 //leftbone
-strokeWeight(3);
+strokeWeight(2.5);
 stroke("gold");
 beginShape();
 fill("black");
@@ -93,16 +93,16 @@ ellipse(79, 115, 6, 6);//leftknuckle
 ellipse(83, 118, 6, 6);//rightknuckle
 
 //teethoutline
-strokeWeight(3);
+strokeWeight(2.5);
 stroke("white");
 fill("white");
-rect(89, 99, 22, 15);
+rect(89, 99, 22, 14);
 
 //skull
-strokeWeight(1);
+strokeWeight(0.5);
 stroke("white");
 fill("black");
-ellipse(100, 88, 29, 33);
+ellipse(100, 88, 30, 33);
 
 //V eye
 strokeWeight(2);
@@ -128,21 +128,21 @@ line(101, 82, 109, 80);//topline
 line(101, 93, 109, 93);//bottomline
 
 //teeth
-strokeWeight(0.5);
+strokeWeight(1);
 stroke("black");
 fill("white");
-rect(89, 99, 5.5, 14.5);//starts from far left
+rect(89, 98, 5.5, 14.5);//starts from far left
 fill("gold");
-rect(94.5, 99, 5.5, 15);
+rect(94.5, 98, 5.5, 15);
 fill("white");
-rect(100, 99, 5.5, 14.3);
+rect(100, 98, 5.5, 14.3);
 fill("white")
-rect(105.5, 99, 5.5, 14.5);
+rect(105.5, 98, 5.5, 14.5);
 
 //lip?
 stroke("black")
 fill("black")
-rect(89, 99, 22, 2);
+rect(89, 98, 22, 2);
 
 
 
