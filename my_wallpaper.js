@@ -20,52 +20,41 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 background("red");
 
-//background
-strokeWeight(1);
-stroke("grey")
-line(0, 0, 200, 200);
-line(0, 200, 200, 0);
-
-strokeWeight(1);
-stroke("white");
-noFill();
-line(100, 0, 100, 200);//middle line
-line(100, 80, 150, 80);//topboneline
-line(90, 10, 110, 10);//crossline
-//lines in circles
-line(115, 50, 145, 50)//top
-line(115, 52, 140, 52)//bottom
-//circles above skull
-ellipse(100, 50, 30, 30);//middle circle
-ellipse(100, 50, 25, 25);
-ellipse(120, 45, 20, 20);//right circle
-
 //testing curvy lines//figure this out bruv
 strokeWeight(1);
 stroke("white");
 noFill();
-// Bezier curve for double bend
+// Bezier curve for double bends bottomline
 bezier(
-  0, 130,     // start point (left)
-  50, 80,    // control point 1 (curve up)
-  150, 170,   // control point 2 (curve down)
-  200, 130    // end point (right)
-)
-//lines on curve
-line(48, 100, 48, 130);
-line(45, 100, 45, 130);
-line(43, 110, 43, 120);
-//my first curve :D
+  50, 120,
+  80, 85,
+  120, 140,
+  150, 120,
+);
+//topline
 bezier(
-  0, 110,//starts here
-  50, 70,//bend starts at the 50 and bends up towards the 70?
-  150, 160,//will go through the 150 and bend at the 160,  
-  200, 130 //finish here at the 130
-)
-
+  50, 120,
+  80, 70,
+  120, 130,
+  150, 120
+);
+//circles start from right
+strokeWeight(1);
+stroke("white");
+fill("white");
+ellipse(140, 119, 11, 9);
+ellipse(135, 110, 10, 10);
+ellipse(125, 100, 20, 20);
+ellipse(63, 100, 10, 10);//farleft
+ellipse(60, 105, 5, 5);
+ellipse(75, 95, 20, 20);
+ellipse(90, 90, 30, 30);
+ellipse(105, 90, 30, 30);
+ellipse(90, 75, 10, 10);
+ellipse(120, 110, 30, 20);
+ellipse(128, 113, 20, 20);
 //crossbones
 //outline
-
 //rightbone
 strokeWeight(2.5);
 stroke("gold");
@@ -137,7 +126,7 @@ ellipse(83, 118, 6, 6);//rightknuckle
 strokeWeight(2.5);
 stroke("white");
 fill("white");
-rect(89, 99, 22, 14);
+rect(89, 99, 22, 13.5);
 
 //skull
 strokeWeight(0.5);
