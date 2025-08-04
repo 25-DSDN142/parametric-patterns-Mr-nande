@@ -10,10 +10,10 @@ let skullcolor = "red";//skull outline
 let eyecolor = "yellow";//eyes outline
 let eyefill = "black";//eyes innerline
 let crossbonefill = "yellow";//crossbone fillin
-let tooth1 = "white"
-let tooth2 = "white"
-let tooth3 = "gold"
-let tooth4 = "white"
+let tooth1 = "gold";
+let tooth2 = "white";
+let tooth3 = "white";
+let tooth4 = "white";
 if (skullcolor == red){
   let eyecolor = white
 };
