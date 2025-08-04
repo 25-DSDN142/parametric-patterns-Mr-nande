@@ -2,16 +2,17 @@
 
 //colors
 let bgColor = "red";//background
-let crossbonecolor = "green";//crossbone outline
-let imgScale = 1;//makes bigger and smaller :O wow
+let imgScale = 1;//changes the size of picture/ new move
+let crossbonecolor = "black";//crossbone outline
 let cloudcolor = "yellow";//cloud outline
 let cloudFill = "black";//cloudfillin
 let skullcolor = "white";//skull outline
-let eyecolor = "yellow";//eyes outline
+let eyecolor = "white";//eyes outline
 let eyefill = "black";//eyes innerline
-let crossbonefill = "yellow";//crossbone fillin
-let tooth1 = "gold";
-let tooth2 = "white";
+let crossbonefill = "gold";//crossbone fillin
+//change which tooth is gold
+let tooth1 = "white";
+let tooth2 = "gold";
 let tooth3 = "white";
 let tooth4 = "white";
 
@@ -40,6 +41,21 @@ background(bgColor);
 
 push();//new move i learnt from sensei phoebe san
 scale(imgScale);
+
+//background lines
+//bottom left of cloud
+strokeWeight(1);
+stroke(cloudFill);
+line(30, 120, 90, 120);
+line(28, 118, 89, 118);
+line(30, 115, 35, 123);
+line(33, 115, 38, 123);
+//top of cloud
+strokeWeight(1.5)
+stroke(cloudcolor);
+fill(cloudFill);
+ellipse(94, 68, 7, 7);
+
 
 //cloudoutline
 strokeWeight(3);
@@ -79,9 +95,13 @@ bezier(
 );
 //cloudfillin
 //circles start from right
+//little bubble top of cloud detail
+
 strokeWeight(0.5);
 stroke(cloudFill);
 fill(cloudFill);
+//little bubble detail top of cloud
+ellipse(94, 68, 6, 6);
 //cloud bubbles/start from left
 ellipse(53, 115, 3, 3);//bottombubble(tinybubble)
 ellipse(55, 110, 8, 8);//secondbubble
@@ -234,6 +254,42 @@ rect(105.5, 98, 5.5, 14.5);
 stroke("black")
 fill("black")
 rect(89, 98, 22, 2);
+
+//cloud swirls/details
+strokeWeight(1);
+stroke(cloudcolor);
+fill(cloudFill);
+ellipse(65, 96, 20, 20);
+
+strokeWeight(0.5);
+stroke(cloudFill);
+fill(cloudFill);
+ellipse(72, 95, 15, 19);
+
+strokeWeight(1);
+stroke(cloudcolor);
+fill(cloudFill);
+ellipse(67, 98, 15, 15);
+stroke(cloudFill);
+ellipse(65, 99, 13, 12);
+
+stroke(cloudcolor);
+strokeWeight(1);
+line(119, 90, 150, 90);
+line(120, 93, 160, 93);
+
+strokeWeight(1);
+stroke(cloudcolor);
+fill(cloudFill);
+ellipse(141, 111, 11, 11);
+stroke(cloudFill);
+ellipse(139, 114, 8, 8);
+strokeWeight(1);
+stroke(cloudcolor);
+ellipse(139, 111, 7, 7);
+stroke(cloudFill);
+fill(cloudFill);
+ellipse(140, 111, 7, 8)
 
 pop();
 }
