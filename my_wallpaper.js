@@ -14,16 +14,15 @@ let tooth1 = "gold";
 let tooth2 = "white";
 let tooth3 = "white";
 let tooth4 = "white";
-if (skullcolor == "red"){
-  (let eyecolor = "white");
-};
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   
-  pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
   
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
