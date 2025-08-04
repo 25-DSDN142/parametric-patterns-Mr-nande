@@ -18,12 +18,12 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-background("pink");
+background("red");
   
 //OUTLINE
 //circles start from right
-strokeWeight(5);
-stroke("blue");
+strokeWeight(4);
+stroke("white");
 fill("black");
 //cloud bubbles/start from left
 ellipse(53, 115, 3, 3);//bottombubble(tinybubble)
@@ -36,12 +36,28 @@ ellipse(110, 75, 30, 30);//7thbub(rightofskull)
 ellipse(110, 101, 40, 30);//8thbub(behindskull)
 ellipse(125, 93, 20, 20);//9thbub(right of skull.eyelevel)
 ellipse(130, 105, 20, 20);//10thbub(rightofskull.teeth level)
-ellipse(134, 114, 20, 20);//11thbub(rightofskullbottom cloud)
-ellipse( 143, 119, 8, 8);
+ellipse(135, 114, 20, 20);//11thbub(rightofskullbottom cloud)
+ellipse( 143, 118, 8, 8);
 ellipse(110, 113, 10, 10);//behind tooth filler/far right
 ellipse( 114, 117, 5, 5);//behind bottom right bone
-ellipse(127, 119, 13, 9);
+ellipse(127, 115, 13, 9);
 
+strokeWeight(6.5);
+stroke("white");
+noFill();
+//topline
+bezier(
+  48, 122,
+  80, 86,
+  102, 132,
+  150, 122
+);
+bezier(
+  48, 122,
+  80, 89,
+  118, 138,
+  150, 122,
+);
 //fillin
 //circles start from right
 strokeWeight(0.5);
@@ -65,19 +81,19 @@ ellipse(125, 118, 14, 10);//oval behind bottom right bone
 ellipse(144, 119, 8, 8);//lastbubble
 //bottom of cloud
 strokeWeight(2.5);
-stroke("white");
+stroke("black");
 noFill();
 //topline
 bezier(
   48, 122,
-  78, 86,
-  120, 134,
+  80, 86,
+  102, 132,
   150, 122
 );
 bezier(
   48, 122,
-  88, 89,
-  110, 140,
+  80, 89,
+  118, 138,
   150, 122,
 );
 //crossbones
