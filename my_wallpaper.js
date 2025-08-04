@@ -14,8 +14,8 @@ let tooth1 = "gold";
 let tooth2 = "white";
 let tooth3 = "white";
 let tooth4 = "white";
-if (skullcolor == red){
-  let eyecolor = white
+if (skullcolor == "red"){
+  (let eyecolor = "white");
 };
 
 function setup_wallpaper(pWallpaper) {
