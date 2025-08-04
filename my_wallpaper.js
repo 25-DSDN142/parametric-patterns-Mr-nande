@@ -4,13 +4,19 @@
 let bgColor = "red";//background
 let crossbonecolor = "green";//crossbone outline
 let imgScale = 0.8;//makes bigger and smaller :O
-let cloudcolor = "black";//cloud outline
+let cloudcolor = "yellow";//cloud outline
 let cloudFill = "white";//cloudfillin
-let skullcolor = "green";//skull outline
+let skullcolor = "red";//skull outline
 let eyecolor = "yellow";//eyes outline
-let eyefill = "black";//eyes innerfill
-let crossbonefill = "yellow";
-
+let eyefill = "black";//eyes innerline
+let crossbonefill = "yellow";//crossbone fillin
+let tooth1 = "white"
+let tooth2 = "white"
+let tooth3 = "gold"
+let tooth4 = "white"
+if (skullcolor == red){
+  let eyecolor = white
+};
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -60,7 +66,6 @@ ellipse( 144, 119, 8, 8);//12thbubble
 ellipse(110, 113, 10, 10);//behind tooth filler/far right
 ellipse( 114, 117, 5, 5);//oval behind bottom right bone
 
-
 //cloudline
 strokeWeight(6.5);
 stroke(cloudcolor);
@@ -78,7 +83,6 @@ bezier(
   118, 138,
   150, 122,
 );
-
 //cloudfillin
 //circles start from right
 strokeWeight(0.5);
@@ -101,7 +105,7 @@ ellipse( 114, 117, 5, 5);//behind bottom right bone
 ellipse(125, 118, 14, 10);//oval behind bottom right bone
 ellipse(144, 119, 8, 8);//lastbubble
 
-//cloudline
+//cloud fillin
 strokeWeight(2.5);
 stroke(cloudFill);
 noFill();
@@ -185,7 +189,6 @@ ellipse(83, 118, 6, 6);//rightknuckle
 //teethoutline
 strokeWeight(2.5);
 stroke(skullcolor);
-fill("white");
 rect(89, 99, 22, 13.5);
 
 //skulltop
@@ -224,13 +227,13 @@ line(101, 93, 109, 93);//bottomline
 //teeth
 strokeWeight(1);
 stroke("black");
-fill("white");
+fill(tooth1);
 rect(89, 98, 5.5, 14.5);//starts from far left
-fill("gold");
+fill(tooth2);
 rect(94.5, 98, 5.5, 14.5);
-fill("white");
+fill(tooth3);
 rect(100, 98, 5.5, 14.5);
-fill("white")
+fill(tooth4)
 rect(105.5, 98, 5.5, 14.5);
 
 //toplip
