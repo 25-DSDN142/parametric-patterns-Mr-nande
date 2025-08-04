@@ -1,4 +1,12 @@
 //your parameter variables go here!
+let bgColor = "pink";
+let crossbonecolor = "blue";
+let imgScale = 1;//makes bigger and smaller :O
+let cloudcolor = "red"
+let cloudFill = "white"
+let skullcolor = "red"
+let eyecolor = "red"
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -18,13 +26,16 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-background("red");
-  
-//OUTLINE
+background(bgColor);
+
+push();//new move i learnt from sensei phoebe san
+scale(imgScale);
+
+//cloudoutline
 //circles start from right
 strokeWeight(4);
-stroke("white");
-fill("black");
+stroke(cloudcolor);
+fill(cloudFill);
 //cloud bubbles/start from left
 ellipse(53, 115, 3, 3);//bottombubble(tinybubble)
 ellipse(55, 110, 8, 8);//secondbubble
@@ -37,13 +48,14 @@ ellipse(110, 101, 40, 30);//8thbub(behindskull)
 ellipse(125, 93, 20, 20);//9thbub(right of skull.eyelevel)
 ellipse(130, 105, 20, 20);//10thbub(rightofskull.teeth level)
 ellipse(135, 114, 20, 20);//11thbub(rightofskullbottom cloud)
-ellipse( 143, 118, 8, 8);
+ellipse( 143, 118, 8, 8);//12thbubble
 ellipse(110, 113, 10, 10);//behind tooth filler/far right
-ellipse( 114, 117, 5, 5);//behind bottom right bone
-ellipse(127, 115, 13, 9);
+ellipse( 114, 117, 5, 5);//oval behind bottom right bone
+ellipse(127, 115, 13, 9);//lastbubble
 
+//cloudline
 strokeWeight(6.5);
-stroke("white");
+stroke(cloudcolor);
 noFill();
 //topline
 bezier(
@@ -58,11 +70,12 @@ bezier(
   118, 138,
   150, 122,
 );
-//fillin
+
+//cloudfillin
 //circles start from right
 strokeWeight(0.5);
-stroke("black");
-fill("black");
+stroke(cloudFill);
+fill(cloudFill);
 //cloud bubbles/start from left
 ellipse(53, 115, 3, 3);//bottombubble(tinybubble)
 ellipse(55, 110, 8, 8);//secondbubble
@@ -79,9 +92,10 @@ ellipse(110, 113, 10, 10);//behind tooth filler/far right
 ellipse( 114, 117, 5, 5);//behind bottom right bone
 ellipse(125, 118, 14, 10);//oval behind bottom right bone
 ellipse(144, 119, 8, 8);//lastbubble
-//bottom of cloud
+
+//cloudline
 strokeWeight(2.5);
-stroke("black");
+stroke(cloudFill);
 noFill();
 //topline
 bezier(
@@ -96,11 +110,11 @@ bezier(
   118, 138,
   150, 122,
 );
-//crossbones
-//outline
+
+//crossbones outline
 //rightbone
-strokeWeight(2.5);
-stroke("gold");
+strokeWeight(3);
+stroke(crossbonecolor);
 fill("black");
 beginShape();
 vertex(125, 75);//top
@@ -115,10 +129,7 @@ ellipse(125, 75, 6, 6);//rightknuckle
 ellipse(79, 115, 6, 6);//leftknuckle
 ellipse(83, 118, 6, 6);//rightknuckle
 //leftbone
-strokeWeight(2.5);
-stroke("gold");
 beginShape();
-fill("black");
 vertex(75, 75);//top
 vertex(119, 119);
 vertex(122, 116);//bottom
@@ -131,12 +142,12 @@ ellipse(74, 75, 6, 6);//leftknuckle
 ellipse(122, 115, 6, 6);//rightknuckle
 ellipse(118, 119, 6, 6);//leftknuckle
 
-//innerbone
+//crossbonefillin
 //leftbone
 strokeWeight(1);
 stroke("black");
-beginShape();
 fill("black");
+beginShape();
 vertex(75, 75);//top
 vertex(119, 119);
 vertex(122, 116);//bottom
@@ -149,9 +160,6 @@ ellipse(74, 75, 6, 6);//leftknuckle
 ellipse(122, 115, 6, 6);//rightknuckle
 ellipse(118, 119, 6, 6);//leftknuckle
 //rightbone
-strokeWeight(1);
-stroke("black");
-fill("black");
 beginShape();
 vertex(125, 75);//top
 vertex(81, 119);
@@ -167,34 +175,38 @@ ellipse(83, 118, 6, 6);//rightknuckle
 
 //teethoutline
 strokeWeight(2.5);
-stroke("white");
+stroke(skullcolor);
 fill("white");
 rect(89, 99, 22, 13.5);
 
-//skull
+//skulltop
 strokeWeight(0.5);
-stroke("white");
+stroke(skullcolor);
 fill("black");
 ellipse(100, 88, 30, 33);
 
 //V eye
+//outline
 strokeWeight(2);
-stroke("white");//outline
-line(90, 81, 95, 93);
-line(93, 93, 97, 81);
+stroke(eyecolor);
+line(90, 81, 95, 93);//leftline
+line(93, 93, 97, 81);//rightline
+//innerline
 strokeWeight(1);
-stroke("black");//inner line
-line(90, 81, 95, 93);
-line(93, 93, 97, 81);
+stroke("black");
+line(90, 81, 95, 93);//leftline
+line(93, 93, 97, 81);//rightline
 //ii eye
-strokeWeight(2);//outline
-stroke("white");
+//outline
+strokeWeight(2);
+stroke(eyecolor);
 line(103, 80, 103, 93);//leftline
 line(107, 80, 107, 93);//rightline
 line(101, 82, 109, 80);//topline
 line(101, 93, 109, 93);//bottomline
+//innerline
 strokeWeight(1);
-stroke("black");//inner line
+stroke("black");
 line(103, 80, 103, 93);//leftline
 line(107, 80, 107, 93);//rightline
 line(101, 82, 109, 80);//topline
@@ -212,8 +224,10 @@ rect(100, 98, 5.5, 14.5);
 fill("white")
 rect(105.5, 98, 5.5, 14.5);
 
-//lip?
+//toplip
 stroke("black")
 fill("black")
 rect(89, 98, 22, 2);
+
+pop();
 }
