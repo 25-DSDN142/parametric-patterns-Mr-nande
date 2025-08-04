@@ -1,14 +1,16 @@
 //your parameter variables go here!
-let bgColor = "yellow";//background
+
+//colors
+let bgColor = "red";//background
 let crossbonecolor = "green";//crossbone outline
 let imgScale = 0.8;//makes bigger and smaller :O
 let cloudcolor = "black";//cloud outline
 let cloudFill = "white";//cloudfillin
 let skullcolor = "green";//skull outline
 let eyecolor = "yellow";//eyes outline
-let goldtooth = "gold";
 let eyefill = "black";//eyes innerfill
 let crossbonefill = "yellow";
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -27,6 +29,10 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+//if statement
+if (bgColor == "red"){
+  let eyecolor = ( "blue ");
+};
 
 background(bgColor);
 
