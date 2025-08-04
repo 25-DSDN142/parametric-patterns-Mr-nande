@@ -41,11 +41,11 @@ bezier(
 //circles start from right
 strokeWeight(1);
 stroke("white");
-noFill();
+fill("white");
 ellipse(140, 119, 11, 9);
 ellipse(135, 110, 10, 10);
 ellipse(125, 100, 20, 20);
-ellipse(63, 100, 10, 10);//farleft
+ellipse(63, 100, 10, 10);
 ellipse(60, 105, 5, 5);
 ellipse(75, 95, 20, 20);
 ellipse(90, 90, 30, 30);
@@ -54,11 +54,15 @@ ellipse(90, 75, 10, 10);
 ellipse(120, 110, 30, 20);
 ellipse(128, 113, 20, 20);
 ellipse(53, 115, 2, 2);
-ellipse(55, 112, 5, 5);
-ellipse(58, 109, 5, 6);
+ellipse(55, 110, 7, 7);
 ellipse(61, 108, 7, 6);
 ellipse(65, 106, 5, 5);
 ellipse(68, 105, 8, 6.5);
+ellipse(73, 105, 7, 6);
+ellipse(78, 105, 7, 6);
+ellipse(84, 105, 10, 8);
+ellipse(102, 113, 5, 5);
+ellipse(108, 114, 10, 6);
 ellipse()
 //crossbones
 //outline
