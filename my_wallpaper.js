@@ -1,12 +1,14 @@
 //your parameter variables go here!
-let bgColor = "pink";
-let crossbonecolor = "blue";
-let imgScale = 1;//makes bigger and smaller :O
-let cloudcolor = "red"
-let cloudFill = "white"
-let skullcolor = "red"
-let eyecolor = "red"
-
+let bgColor = "yellow";//background
+let crossbonecolor = "green";//crossbone outline
+let imgScale = 0.8;//makes bigger and smaller :O
+let cloudcolor = "black";//cloud outline
+let cloudFill = "white";//cloudfillin
+let skullcolor = "green";//skull outline
+let eyecolor = "yellow";//eyes outline
+let goldtooth = "gold";
+let eyefill = "black";//eyes innerfill
+let crossbonefill = "yellow";
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -48,10 +50,10 @@ ellipse(110, 101, 40, 30);//8thbub(behindskull)
 ellipse(125, 93, 20, 20);//9thbub(right of skull.eyelevel)
 ellipse(130, 105, 20, 20);//10thbub(rightofskull.teeth level)
 ellipse(135, 114, 20, 20);//11thbub(rightofskullbottom cloud)
-ellipse( 143, 118, 8, 8);//12thbubble
+ellipse( 144, 119, 8, 8);//12thbubble
 ellipse(110, 113, 10, 10);//behind tooth filler/far right
 ellipse( 114, 117, 5, 5);//oval behind bottom right bone
-ellipse(127, 115, 13, 9);//lastbubble
+
 
 //cloudline
 strokeWeight(6.5);
@@ -98,6 +100,7 @@ strokeWeight(2.5);
 stroke(cloudFill);
 noFill();
 //topline
+//curvyline with two bends :)
 bezier(
   48, 122,
   80, 86,
@@ -115,7 +118,7 @@ bezier(
 //rightbone
 strokeWeight(3);
 stroke(crossbonecolor);
-fill("black");
+fill(crossbonefill);
 beginShape();
 vertex(125, 75);//top
 vertex(81, 119);
@@ -145,8 +148,8 @@ ellipse(118, 119, 6, 6);//leftknuckle
 //crossbonefillin
 //leftbone
 strokeWeight(1);
-stroke("black");
-fill("black");
+stroke(crossbonefill);
+fill(crossbonefill);
 beginShape();
 vertex(75, 75);//top
 vertex(119, 119);
@@ -193,7 +196,7 @@ line(90, 81, 95, 93);//leftline
 line(93, 93, 97, 81);//rightline
 //innerline
 strokeWeight(1);
-stroke("black");
+stroke(eyefill);
 line(90, 81, 95, 93);//leftline
 line(93, 93, 97, 81);//rightline
 //ii eye
@@ -206,7 +209,7 @@ line(101, 82, 109, 80);//topline
 line(101, 93, 109, 93);//bottomline
 //innerline
 strokeWeight(1);
-stroke("black");
+stroke(eyefill);
 line(103, 80, 103, 93);//leftline
 line(107, 80, 107, 93);//rightline
 line(101, 82, 109, 80);//topline
