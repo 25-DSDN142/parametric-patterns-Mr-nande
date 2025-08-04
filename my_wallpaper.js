@@ -3,7 +3,7 @@
 //colors
 let bgColor = "red";//background
 let crossbonecolor = "green";//crossbone outline
-let imgScale = 0.8;//makes bigger and smaller :O
+let imgScale = 1;//makes bigger and smaller :O
 let cloudcolor = "yellow";//cloud outline
 let cloudFill = "white";//cloudfillin
 let skullcolor = "red";//skull outline
@@ -18,11 +18,11 @@ let tooth4 = "white";
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   
-  pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
   
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -34,10 +34,6 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-//if statement
-if (bgColor == "red"){
-  let eyecolor = ( "blue ");
-};
 
 background(bgColor);
 
