@@ -3,10 +3,10 @@
 //colors
 let bgColor = "red";//background
 let crossbonecolor = "green";//crossbone outline
-let imgScale = 1;//makes bigger and smaller :O
+let imgScale = 1;//makes bigger and smaller :O wow
 let cloudcolor = "yellow";//cloud outline
-let cloudFill = "white";//cloudfillin
-let skullcolor = "red";//skull outline
+let cloudFill = "black";//cloudfillin
+let skullcolor = "white";//skull outline
 let eyecolor = "yellow";//eyes outline
 let eyefill = "black";//eyes innerline
 let crossbonefill = "yellow";//crossbone fillin
@@ -14,6 +14,7 @@ let tooth1 = "gold";
 let tooth2 = "white";
 let tooth3 = "white";
 let tooth4 = "white";
+
 
 
 
@@ -41,11 +42,10 @@ push();//new move i learnt from sensei phoebe san
 scale(imgScale);
 
 //cloudoutline
-//circles start from right
-strokeWeight(4);
+strokeWeight(3);
 stroke(cloudcolor);
 fill(cloudFill);
-//cloud bubbles/start from left
+//cloud bubbles/start from left//change stroke to see bubbles
 ellipse(53, 115, 3, 3);//bottombubble(tinybubble)
 ellipse(55, 110, 8, 8);//secondbubble
 ellipse(59, 105, 13, 12);//thirdbubble
@@ -60,9 +60,8 @@ ellipse(135, 114, 20, 20);//11thbub(rightofskullbottom cloud)
 ellipse( 144, 119, 8, 8);//12thbubble
 ellipse(110, 113, 10, 10);//behind tooth filler/far right
 ellipse( 114, 117, 5, 5);//oval behind bottom right bone
-
 //cloudline
-strokeWeight(6.5);
+strokeWeight(5);
 stroke(cloudcolor);
 noFill();
 //topline
