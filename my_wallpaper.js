@@ -18,13 +18,13 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-background("red");
+background("pink");
   
 //OUTLINE
 //circles start from right
-strokeWeight(4);
-stroke("black");
-fill("white");
+strokeWeight(5);
+stroke("blue");
+fill("black");
 //cloud bubbles/start from left
 ellipse(53, 115, 3, 3);//bottombubble(tinybubble)
 ellipse(55, 110, 8, 8);//secondbubble
@@ -36,16 +36,17 @@ ellipse(110, 75, 30, 30);//7thbub(rightofskull)
 ellipse(110, 101, 40, 30);//8thbub(behindskull)
 ellipse(125, 93, 20, 20);//9thbub(right of skull.eyelevel)
 ellipse(130, 105, 20, 20);//10thbub(rightofskull.teeth level)
-ellipse(135, 115, 20, 20);//11thbub(rightofskullbottom cloud)
+ellipse(134, 114, 20, 20);//11thbub(rightofskullbottom cloud)
 ellipse( 143, 119, 8, 8);
 ellipse(110, 113, 10, 10);//behind tooth filler/far right
 ellipse( 114, 117, 5, 5);//behind bottom right bone
 ellipse(127, 119, 13, 9);
 
+//fillin
 //circles start from right
-strokeWeight(1);
-stroke("white");
-fill("white");
+strokeWeight(0.5);
+stroke("black");
+fill("black");
 //cloud bubbles/start from left
 ellipse(53, 115, 3, 3);//bottombubble(tinybubble)
 ellipse(55, 110, 8, 8);//secondbubble
@@ -57,21 +58,26 @@ ellipse(110, 75, 30, 30);//7thbub(rightofskull)
 ellipse(110, 101, 40, 30);//8thbub(behindskull)
 ellipse(125, 93, 20, 20);//9thbub(right of skull.eyelevel)
 ellipse(130, 105, 20, 20);//10thbub(rightofskull.teeth level)
-ellipse(135, 115, 20, 20);//11thbub(rightofskullbottom cloud)
-ellipse( 143, 119, 8, 8);
+ellipse(135, 114, 20, 20);//11thbub(rightofskullbottom cloud)
 ellipse(110, 113, 10, 10);//behind tooth filler/far right
 ellipse( 114, 117, 5, 5);//behind bottom right bone
-ellipse(127, 119, 13, 9);
-
-//testing curvy lines//figure this out bruv
-strokeWeight(3);
-stroke("black");
+ellipse(125, 118, 14, 10);//oval behind bottom right bone
+ellipse(144, 119, 8, 8);//lastbubble
+//bottom of cloud
+strokeWeight(2.5);
+stroke("white");
 noFill();
-// Bezier curve for double bends bottomline
+//topline
 bezier(
-  50, 122,
-  80, 85,
-  120, 140,
+  48, 122,
+  78, 86,
+  120, 134,
+  150, 122
+);
+bezier(
+  48, 122,
+  88, 89,
+  110, 140,
   150, 122,
 );
 //crossbones
